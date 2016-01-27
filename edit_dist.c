@@ -133,8 +133,9 @@ void printArray(int** a, char* s1, char* s2) {
         for(j = 0; j < strlen(s2) + 1; j++) {
             printf("%3d", a[i][j]);
         }
-    printf("\n");
+        printf("\n");
     }
+    printf("The minimum edit distance is %d.\n", a[i-1][j-1]);
 }
 
 int min3(int a, int b, int c) {
